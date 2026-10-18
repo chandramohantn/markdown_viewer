@@ -1,0 +1,23 @@
+{
+  "name": "offline-markdown-viewer",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "copy:mathjax": "node scripts/copy-mathjax.mjs",
+    "postinstall": "npm run copy:mathjax"
+  },
+  "dependencies": {
+    "dompurify": "3.2.6",
+    "highlight.js": "11.11.1",
+    "marked": "15.0.7",
+    "mathjax": "3.2.2",
+    "mermaid": "11.4.1"
+  },
+  "devDependencies": {
+    "vite": "6.1.0"
+  }
+}
